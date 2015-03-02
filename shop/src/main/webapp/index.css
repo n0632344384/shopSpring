@@ -1,0 +1,185 @@
+body {
+	margin: 0;
+	padding: 0;
+	margin-top: 20px;
+	width: 100%;
+}
+
+#header {
+	width: 100%;
+	text-align: center;
+}
+
+#userInfo {
+	margin: 20px auto;
+	width: 200px;
+}
+
+#setLang {
+	margin: 0 auto;
+	width: 200px;
+}
+
+#login {
+	margin: 0 auto;
+	width: 200px;
+}
+
+#loginError {
+	color: red;
+}
+
+#addProductError {
+	color: red;
+}
+
+/****************************************************************************************************/
+
+#content {
+	/*padding: 20px 0px 0px 0px;*/
+	width: 100%;
+	float: left;
+}
+
+#sidebarLeft {
+	float: left;
+	width: 20%;
+}
+
+#menuMandator {
+	padding: 20px;
+}
+
+#menu {
+	padding: 20px;
+}
+
+/****************************************************************************************************/
+
+#center {
+	float: left;
+	width: 60%;
+}
+
+#mandatorMessage {
+	padding: 20px 0px 0px 0px;
+}
+
+.products {
+	margin: 20px;
+	border: 1px #000000 solid;
+	height: 220px;
+}
+
+.productLeft {
+	float: left;
+	margin: 20px;
+	width: 20%;
+	text-align: center;
+}
+
+.productImage {
+	margin: 0 auto;
+}
+
+.productPrice {
+	margin: 0 auto;
+	padding: 10px 0px 10px 0px;
+}
+
+.productName {
+	float: left;
+	padding: 20px 0px 20px 0px;
+	width: 70%;
+}
+
+.productDescription {
+	float: left;
+	width: 70%;
+}
+
+#tableProducts {
+	width: 60%;
+	border-spacing: 10px 10px;
+	/*border-collapse: collapse;*/
+}
+
+#tableProducts, #tableProducts th, #tableProducts td {
+	/*border: 2px #000000 solid;*/
+	border: 1px solid black;
+}
+
+#productsPagination {
+	/*border="1" cellpadding="5" cellspacing="5"*/
+}
+
+#pagination {
+	margin: 0 auto;
+	border: 1px solid black;
+	border-scacing: 5px;
+}
+
+#pagination td {
+	padding: 6px;
+	border: 1px solid black;
+}
+
+/**********/
+
+#register {
+	margin: 0 auto;
+	width: 400px;
+}
+
+#registerError {
+	float: left;
+	color: red;
+}
+
+#registrationDone {
+	float: left;
+	color: green;
+}
+
+#addProductDone {
+	float: left;
+	color: green;
+}
+
+#updateProductDone {
+	float: left;
+	color: green;
+}
+
+#delProductDone {
+	float: left;
+	color: green;
+}
+
+#registerHeader {
+	float: left;
+	padding: 0px 0px 20px 130px;
+}
+
+#registerLeft {
+	float: left;
+	width: 200px;
+	height: 300px;
+}
+
+#registerRight {
+	float: left;
+	width: 200px;
+	height: 300px;
+}
+
+#registerSubmit {
+	float: left;
+	padding: 20px 0px 0px 130px;
+}
+
+/****************************************************************************************************/
+#sidebarRight {
+	width: 20%;
+	float: right;
+}

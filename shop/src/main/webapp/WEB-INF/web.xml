@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<error-page>
+  		<error-code>404</error-code>
+  		<location>/error</location>
+	</error-page>
+	
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.shop.servlets.LoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>RegisterServlet</servlet-name>
+		<servlet-class>com.shop.servlets.RegisterServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>BasketAddServlet</display-name>
+		<servlet-name>BasketAddServlet</servlet-name>
+		<servlet-class>com.shop.servlets.BasketAddServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>BasketDelServlet</display-name>
+		<servlet-name>BasketDelServlet</servlet-name>
+		<servlet-class>com.shop.servlets.BasketDelServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>MandatorServlet</display-name>
+		<servlet-name>MandatorServlet</servlet-name>
+		<servlet-class>com.shop.servlets.MandatorServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>ErrorServlet</display-name>
+		<servlet-name>ErrorServlet</servlet-name>
+		<servlet-class>com.shop.servlets.ErrorServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>SetLangServlet</display-name>
+		<servlet-name>SetLangServlet</servlet-name>
+		<servlet-class>com.shop.servlets.SetLangServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern></url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>BasketAddServlet</servlet-name>
+		<url-pattern>/addToBasket</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>BasketDelServlet</servlet-name>
+		<url-pattern>/delFromBasket</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MandatorServlet</servlet-name>
+		<url-pattern>/mandator</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ErrorServlet</servlet-name>
+		<url-pattern>/error</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SetLangServlet</servlet-name>
+		<url-pattern>/setLang</url-pattern>
+	</servlet-mapping>
+</web-app>
