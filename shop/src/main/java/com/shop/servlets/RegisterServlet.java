@@ -18,7 +18,7 @@ public class RegisterServlet extends HttpServlet {
 	public RegisterServlet() {
 		super();
 	}
-
+	
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("RegisterServlet doGet");
