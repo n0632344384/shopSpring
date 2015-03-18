@@ -8,6 +8,14 @@
 	<name>shop Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 
+	<properties>
+		<java-version>1.8</java-version>
+		<spring.version>4.0.2.RELEASE</spring.version>
+		<spring.security.version>3.2.3.RELEASE</spring.security.version>
+		<!--spring.version>3.1.4.RELEASE</spring.version -->
+		<!--jdk.version>1.6</jdk.version -->
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -15,35 +23,48 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
-	
+
+		<!-- Spring MVC -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-		<!--dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-web</artifactId>
-			<version>${spring.version}</version>
-		</dependency-->
+		<!-- dependency> <groupId>org.springframework</groupId> <artifactId>spring-web</artifactId> 
+			<version>${spring.version}</version> </dependency -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
 
-		<!-- Spring Security -> <dependency> <groupId>org.springframework.security</groupId> 
-			<artifactId>spring-security-core</artifactId> <version>${spring.version}</version> 
-			</dependency> <dependency> <groupId>org.springframework.security</groupId> 
-			<artifactId>spring-security-web</artifactId> <version>${spring.version}</version> 
-			</dependency> <dependency> <groupId>org.springframework.security</groupId> 
-			<artifactId>spring-security-config</artifactId> <version>${spring.version}</version> 
-			</dependency -->
+		<!-- Spring Security -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-core</artifactId>
+			<version>${spring.security.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>${spring.security.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>${spring.security.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-taglibs</artifactId>
+			<version>${spring.security.version}</version>
+		</dependency>
 	</dependencies>
+
 	<build>
 		<finalName>shop</finalName>
-		<!--defaultGoal>install</defaultGoal-->
-		<!--defaultGoal>compile</defaultGoal-->
+		<!--defaultGoal>install</defaultGoal -->
+		<!--defaultGoal>compile</defaultGoal -->
 		<plugins>
 			<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
@@ -66,13 +87,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
-	<properties>
-		<spring.version>4.0.2.RELEASE</spring.version>
-		<!--jdk.version>1.6</jdk.version-->
-	</properties>
-
-	<!--filter> <filter-name>springSecurityFilterChain</filter-name> <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class> 
-		</filter> <filter-mapping> <filter-name>springSecurityFilterChain</filter-name> 
-		<url-pattern>/*</url-pattern> </filter-mapping -->
 </project>
